@@ -134,7 +134,7 @@ class SQLICSVRowSet implements ArrayAccess, Iterator, Countable
         $header = preg_replace( '#[^a-z0-9]#i', ' ', $header );
         $header = trim( $header );
         $header = ucwords( $header );
-        $header{0} = strtolower( $header{0} );
+        $header[0] = strtolower( $header[0]);
         $header = str_replace( ' ', '', $header );
         
         return $header;
